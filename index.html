@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자스 필수패턴 4 - 조건문</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+      조건문
+      - 비교연산자를 활용한 조건식을 이용해서 특정 조건일때 서로 다른 코드가 실행되도록 분기처리
+      if(조건식1){
+        조건식1이 참이면 이곳의 구문이 실행
+        거짓이면 이곳의 구문 무시
+      }
+      else if(조건식2){
+        조건식2가 참이면 이곳의 구문이 실행
+        거짓이면 이곳의 구문 무시
+      }
+      else{
+        위의 모든 조건이 참이 아닐때 이곳의 구문을 실행하고 종료
+      }
+    */
+      const hour = new Date().getHours();
+
+      /*
+    if (hour >= 0 && hour < 10) {
+      console.log('오전입니다.')
+    }
+    else if (hour >= 10 && hour < 15) {
+      console.log('오후입니다.')
+    }
+    else if (hour >= 15 && hour < 20) {
+      console.log('저녁입니다.')
+    }
+    else {
+      console.log('야간입니다.')
+    }
+    */
+      if (hour >= 0 && hour < 10) console.log("오전입니다.");
+      if (hour >= 10 && hour < 15) console.log("오후입니다.");
+      if (hour >= 15 && hour < 20) console.log("저녁입니다.");
+      else console.log("야간입니다.");
+    </script>
+  </body>
+</html>
